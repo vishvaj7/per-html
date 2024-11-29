@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishva's Personal Website</title>
+<script src="per.js"></script>
+
+<style>
+/* Reset and Basic Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  line-height: 1.6;
+}
+header {
+  background-color:  black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Main Content */
+main {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* Tab Styles */
+.tabcontent {
+  display: none;
+}
+
+.tablinks {
+  cursor: pointer;
+}
+
+/* Active Tab */
+.tablinks.active {
+  background-color: #555;
+  color: white;
+}
+
+/* Section Styles */
+section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+section p, section ul {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+margin ; 0;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+height : 100%;
+}
+</style>
+  </head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>Vishva</h1>
+      <p>Final Year Student</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#" class="tablinks" onclick="openTab(event, 'bio')">Bio</a></li>
+        <li><a href="#" class="tablinks" onclick="openTab(event, 'projects')">Projects</a></li>
+        <li><a href="#" class="tablinks" onclick="openTab(event, 'skills')">Skills</a></li>
+        <li><a href="#" class="tablinks" onclick="openTab(event, 'certifications')">Certifications</a></li>
+        <li><a href="#" class="tablinks" onclick="openTab(event, 'education')">Education</a></li>
+        <li><a href="#" class="tablinks" onclick="openTab(event, 'contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Bio Section -->
+    <section id="bio" class="tabcontent">
+      <h2>Summary</h2>
+      <p>ECE student passionate about C and Python programming. Strong
+ problem-solving abilities with a basic understanding of electronics
+ and communication principles. Looking to enhance coding skills
+ and grow technical knowledge in software development.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="tabcontent">
+      <h2>Projects</h2>
+      <ul>
+        <li>1) Street lighting with fault detection<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this project we use two LDR sensor one is to check day
+ or night and second one is to check if there is problem in light
+ . then the message sent control room using GSM module and
+ Arduino UNO.<br><br>
+ 2) Traffic light control system<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This project mainly involves in sorting the traffic as per
+ which lane the long queue , this project also consider about
+ emergency vehicle like ambulance and fire engine. detection is
+ done using YOLO.</li>
+      </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="tabcontent">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programing Language : C, python , Java , C++</li>
+        <li>Concept : OOPs,</li>
+      </ul>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="tabcontent">
+      <h2>Certifications</h2>
+      <ul>
+        <li>C Master - Infosys Springboard</li>
+        <li>Python for Data Science -GUVI</li>
+        <li>Cloud Computing - Edx</li>
+      </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="tabcontent">
+      <h2>Education</h2>
+      <p>Bachelor's in Electonics & Communication(Minor degree : AIML)<br>RMK engineering collage (2021 - 2025)</p>
+<p> CGPA  : 7.54<br><br>
+      <p>HSC (12th Grade) <br> Velammal Matric School (2020 - 2021)<br>Percentage : 79.33%</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="tabcontent">
+      <h2>Contact</h2>
+      <p>Email: vishvaj703@gmail.com</p>
+      <p>Phone: +91 7305093979</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/vishva-j-5640b6248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_appS">click here</a></p>
+      <p>Whatsapp: <a href="wa.link/rg2jv9">click here</a></p>
+    </section>
+  </main>
+<br><br><br><br>
+  <footer>
+    <p>&copy; 2024 Vishva. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
